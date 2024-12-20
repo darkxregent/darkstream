@@ -1,0 +1,214 @@
+.content_head{
+    padding: 4px;
+}
+.logo{
+    display: block;
+}
+.ds_titre{
+    padding-left: 0px;
+}
+.titre{
+    display: none;
+}
+.ds_search_content{
+    width: 42%;
+    min-width: 110px;
+    height: 17px;
+}
+.ds_search{
+    font-size: 14px;
+}
+
+.other_icon{
+    width: 30%;
+}
+/* pour la navigations */
+
+.content_nav{
+    width: 100vw;
+    height:  44px;
+    display: flex;
+    flex-direction: row;
+    background: #4e388f;
+    border-radius: 2px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.ds_nav{
+    gap: 2px;
+    padding: 0;
+    width: 100%;
+}
+.ds_nav:hover{
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 7px;
+}
+.herf_stat.mobile{
+   padding: 9px;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   border: 3px solid #4e388f;
+   background: #4e388f;
+   border-radius: 50%;
+   position: relative;
+   top: -10px;
+}
+.ds_avatars{
+    width: 42px;
+    height: 42px;
+}
+.herf_stat.mobile:hover{
+    padding: 8px;
+    background-color: #7b44449e;
+    border-radius: 50%;
+}
+
+.alert_content{
+    width: 90vw;
+    height: 80px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: calc(50vw - 45vw);
+    top: 20px;
+}
+
+
+/* LES Cadres ves videos */
+.ds_content_allcard{
+    width: 100vw;
+    height: calc(100vh - 120px);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.ds_conent_shot_parametre{
+    position: absolute;
+    top: 33px;
+    right: 6px;
+}
+
+
+
+
+
+/* userstyles mobile  */
+.ds_conteneurs{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow: auto;
+}
+.my_head{
+    position: relative;
+    display: flex;
+    gap: 3px;
+    margin: 8px;
+    min-height: 130px;
+    flex-direction: column;
+}
+.user_avx{
+    width: 90px;
+    min-width: 90px;
+    margin: auto;
+}
+.prf_menu{
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25px;
+}
+
+
+
+
+
+/* playerstyles mobile  */
+.ds_content_player {
+    width: 97vw;
+    height: calc(100vh - 110px);
+    position: absolute;
+    top: 73px;
+    left: 0;
+    overflow: auto;
+    justify-content: center;
+}
+.stream_conteurs {
+    width: 98%;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+/* PLAYLIST AND COMMT MINIATURE FORMAT */
+.sections_visiteurs.modifrax{
+    position: fixed;
+    display: flex;
+    width: 98%;
+    height: calc(100vh - 40px);
+    background-color: #180002;
+    top: 0px;
+    right: 0px;
+    overflow: auto;
+    border-radius: 12px;
+    border: #5d4b4b groove 1px;
+    padding: 0;
+}
+.section_play_rax{
+    position: fixed;
+    bottom: 47px;
+    right: 23px;
+    background-color: #00b206;
+    padding: 17px 13px;
+    z-index: 11;
+    border-radius: 12px;
+}
+
+.player_name{
+    font-size: 0.8rem;
+}
+
+
+
+/* SEARCH STYLES SECTION */
+.ds_content_search{
+    top: 48px;
+    left: 5px;
+    width: 98vw;
+    height: calc(100vh - 94px);
+    justify-content: center;
+}
+
+.herf_info_video{
+    width: 100%;
+}
+
+.herf_for_video{
+    width:  100%;
+    height: max-content;
+}
+.other_card_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.other_card_content{
+    width: calc(100% - 6px);
+}
+.herf_video_titre{
+    max-height: 62px;
+    font-size: 1rem;
+}
+
+/* mini-width for search page */
+@media all and (max-width:760px){
+    .ds_content_search,.content_head{
+        min-width: auto;
+    }
+}

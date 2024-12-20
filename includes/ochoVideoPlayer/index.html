@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocho Video Player</title>
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://ochokom.github.io/videos-ocho/profil.jpg" type="image/x-icon">
+    <meta name="description"
+        content="Notre lecteur vidéo HTML est une solution légère et performante pour intégrer la lecture de vidéos sur votre site web">
+</head>
+
+<body>
+    <h1>Ocho HTML video player</h1>
+
+    <h2>Description</h2>
+    <p>Notre lecteur vidéo HTML est une solution légère et performante pour intégrer la lecture de vidéos sur votre site
+        web, développée exclusivement en utilisant JavaScript vanilla. Cette approche élimine toute dépendance à des
+        plugins, bibliothèques externes ou frameworks, offrant ainsi une flexibilité totale et une intégration
+        transparente dans divers environnements web.</p>
+
+    <h2>Caractéristiques Clés</h2>
+    <ul class="list">
+        <li><strong>JavaScript Vanilla :</strong> Développé sans dépendances externes pour garantir une exécution rapide
+            et une intégration facile.</li>
+        <li><strong>Interface Utilisateur Intuitive :</strong> Contrôles de lecture, de volume et de progression
+            conviviaux pour une expérience utilisateur optimale.</li>
+        <li><strong>Personnalisation Facile :</strong> Modularité du code permettant une personnalisation aisée de
+            l'apparence et des fonctionnalités.</li>
+        <li><strong>Léger et Rapide :</strong> Évite les surcharges inutiles, assurant une lecture fluide et des
+            performances optimales du site.</li>
+        <li><strong>Compatibilité Multiplateforme :</strong> Fonctionne de manière cohérente sur différents navigateurs
+            pour une expérience utilisateur homogène.</li>
+    </ul>
+
+    <h2>Technologies Utilisées</h2>
+    <ul class="list">
+        <li><strong>HTML5 :</strong> Structure de base pour le lecteur vidéo.</li>
+        <li><strong>CSS3 :</strong> Styles et mises en forme de l'interface utilisateur.</li>
+        <li><strong>JavaScript Vanilla :</strong> Logique de lecture vidéo et gestion des événements.</li>
+    </ul>
+
+    <h2>Comment Utiliser</h2>
+    <ol class="list">
+        <li>Intégrez les fichiers HTML, CSS et JavaScript dans votre projet.</li>
+        <li>Personnalisez l'apparence et le comportement en modifiant le code selon vos besoins spécifiques.</li>
+        <li>Profitez d'une intégration légère et flexible de la lecture vidéo sur votre site web.</li>
+    </ol>
+    <h2>Exemple d'Intégration</h2>
+    <pre contenteditable spellcheck="false">
+        <code class="code"><span class="comment tag">&lt;!-- Remplacer "votre-video.mp4" par le chemin vers votre vidéo et size par la résolution de votre vidéo --&gt;</span>
+<span class="tag">&lt;<span class="tag-name">ocho</span> <span class="attribute">src</span>=<span class="value">"votre-video.mp4"</span> <span class="attribute">size</span>=<span class="value">"720"</span>&gt;</span>
+    <span class="tag comment">&lt;!-- Ajouter des sources de différente qualité et remplacer size par la résolution de votre nouvelle source --&gt;</span>
+    <span class="tag comment">&lt;!-- <span class="tag">&lt;source src="votre-video_1080.mp4" size="1080"&gt;</span>; --&gt;</span>
+  
+    <span class="comment tag">&lt;!-- Ajouter des sous-titres et remplacer fr par le code iso de votre langue Remplacer "votre-sous-titre.vtt" par le chemin vers votre fichier vtt --&gt;</span>
+    <span class="comment tag">&lt;!-- <span class="tag">&lt;track kind="subtitles" label="French" srclang="fr" src="votre-sous-titre.vtt"&gt;</span>;--&gt;</span>
+<span class="tag">&lt;/<span class="tag-name">ocho</span>&gt;</span>
+    
+<span class="comment tag">&lt;!-- Liez la page au script de type module --&gt;</span>
+<span class="tag">&lt;<span class="tag-name">script</span> <span class="attribute">type</span>=<span class="value">"module"</span> <span class="attribute">src</span>=<span class="value">"<a 
+    href="https://ochokom.github.io/ocho-video-player/video-player.js" target="_blank">https://ochokom.github.io/ocho-video-player/video-player.js</a>"</span>&gt;</span><span class="tag">&lt;/<span class="tag-name">script</span>&gt;</span></code>
+</pre>
+    <h2>Exemple d'Utilisation</h2>
+    <ocho src="vid.mp4" size="1080" autoplay poster="./poster.png"></ocho>
+
+    <h2>Contribution</h2>
+    <p>Les contributions sont les bienvenues. N'hésitez pas à ouvrir une issue pour discuter des fonctionnalités
+        proposées ou à soumettre une pull request pour corriger des bugs.</p>
+
+    <h3>Comment Contribuer</h3>
+    <ol>
+        <li>Fork le projet.</li>
+        <li>Créez une nouvelle branche pour votre fonctionnalité
+            (<code>git checkout -b feature/nouvelle-fonctionnalite</code>).</li>
+        <li>Committez vos modifications (<code>git commit -am 'Ajouter une nouvelle fonctionnalité'</code>).</li>
+        <li>Poussez la branche sur votre fork (<code>git push origin feature/nouvelle-fonctionnalite</code>).</li>
+        <li>Ouvrez une pull request.</li>
+    </ol>
+
+    <h3>Guidelines de Contribution</h3>
+    <ul class="list">
+        <li>Assurez-vous de tester votre code.</li>
+        <li>Suivez les conventions de codage du projet.</li>
+        <li>Soyez respectueux envers les autres contributeurs.</li>
+        <li>N'oubliez pas de mettre à jour la documentation si nécessaire.</li>
+    </ul>
+
+    <h3>Rapport de Bugs</h3>
+    <p>Si vous trouvez un bug, veuillez ouvrir une issue en fournissant des détails clairs et pertinents. Incluez des
+        captures d'écran si possible.</p>
+
+    <h2>Licence</h2>
+    <p>Ce projet est sous licence MIT - voir le fichier <a
+            href="https://ochokom.github.io/ocho-video-player/LICENCE.md">LICENSE.md</a> pour plus de détails.</p>
+    <footer>
+        <div class="footer-content">
+            <h3>Martin Ocho</h3>
+            <p>
+                Notre projet de lecteur vidéo HTML custom représente une approche minimaliste et performante pour
+                intégrer la lecture de vidéos sur votre site web, développée exclusivement en utilisant JavaScript
+                vanilla. Cette approche élimine toute dépendance à des plugins, bibliothèques externes ou frameworks,
+                offrant ainsi une flexibilité totale et une intégration transparente dans divers environnements web.
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2024 OchoKOM. designed by <span>Martin Ocho</span></p>
+        </div>
+    </footer>
+    <script type="module" src="./video-player.js"></script>
+</body>
+
+</html>

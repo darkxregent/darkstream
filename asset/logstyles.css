@@ -1,0 +1,239 @@
+.log_content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.ds_log{
+    margin: auto;
+    /* border: 1px solid #fffdfd; */
+    width: 26vw;
+    min-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    padding: 8px 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: beige 1px 2px 4px 2px;
+}
+.log_head{
+    display: flex;
+    justify-content: space-around;
+}
+.log_head p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    letter-spacing: 6px;
+}
+.log_head span{
+    letter-spacing: normal;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 90px;
+    height: 50px;
+}
+.ds_in{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 8px;
+}
+.ds_in.avis{
+    flex-direction: row;
+    align-items: center;
+
+}
+.ds_in label{
+    font-size: larger;
+    list-style-type: circle;
+}
+.ds_in.x label::before{
+    content: "\201055"; /* Code Unicode du cercle */
+    display: inline-block;
+    width: 1em; /* Largeur du cercle */
+    margin-right: 0.2em; /* Espacement entre le cercle et le texte */
+    color: rgb(183, 47, 47); /* Couleur du cercle */
+}
+.ds_in.pass_remove{
+    padding: 0px;
+    align-items: flex-end;
+
+}
+.ds_in.pass_remove a{
+    color: #56b3ff;
+    font-size: larger;
+}
+.ds_in.pass_remove a:hover{
+    color: #003cff;
+    
+}
+.my{
+    height: 24px;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: inset #fffdfd -2px -8px 16px 6px;
+    border-radius: 3px;
+    color: black;
+    padding-left: 13px;
+    font-size: large;
+}
+.my:valid{
+    background-color: #fff;
+}
+#check{
+    width: 20px;
+    height: 20px;
+}
+.subin,.subup{
+    width: 80%;
+    height: 26px;
+    margin: 5px auto;
+    border-radius: 14px;
+    box-shadow: inset #82ee15 -2px -8px 16px 6px;
+}
+
+
+/* inscriptions */
+.ds_up{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.ds_up label{
+    font-size: 1.12rem;
+}
+.ds_up label::before{
+    /*content: "\2722";  Code Unicode du cercle */
+    content: "\2739"; /* Code Unicode du cercle */
+    display: inline-block;
+    width: 1em; /* Largeur du cercle */
+    margin-right: 0.127em; /* Espacement entre le cercle et le texte */
+    color: blue; /* Couleur du cercle */
+}
+.data{
+    height: 24px;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: inset #fffdfd -6px 11px 20px 0px;
+    color: rgb(255, 251, 251);
+    padding-left: 13px;
+    font-size: large;
+    border-radius: 3px;
+}
+.data:valid{
+    box-shadow: inset #d0ffc2  -3px 17px 20px 0px;
+    color: black;
+}
+.data_avatars{
+    padding: 2px 0;
+    box-shadow: white 1px 2px 2px 1px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+}
+.ds_up.avis{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ds_up.avis #check{
+    width: 26px;
+    height: 26px;
+}
+.ds_up.avis label::before{
+    content: '';
+    margin-right: 0em;
+    width: auto;
+}
+
+/* pour la demende d'adesion */
+.log_query{
+    margin: 35px auto;
+    color: #0f44f0;
+}
+.hearf_content{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+.shild{
+    padding: 5px 18px;
+    border-radius: 4px;
+    box-shadow: rgb(87, 87, 87) 0px 0px 11px 0px;
+}
+.shild:hover{
+    box-shadow: inset #2e2d2d 0px 0px 11px 0px;
+    background-color: rgb(87, 87, 87);
+}
+.first_shild:active{
+    background-color: rgb(66, 255, 66)
+}
+.last_shild:active{
+    background-color: rgb(122, 25, 25)
+}
+
+/* desolation login moin de 18ans */
+.log_remove{
+    width: 96%;
+    margin: 40px auto;
+    color: #ee1b1be2;
+    text-align: center;
+}
+.log_close{
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    padding: 2px 13px;
+    background-color: #55ff00;
+    border: 2px solid #ff0000;
+    color: rgb(160, 0, 0);
+    border-radius: 4px;
+}
+.log_close:hover{
+    border: 2px solid #55ff00;
+    color: #ffffff;
+    background-color: #ff0000;
+}
+/* deblasement indv */
+
+.ds_log_form{
+    display: none;
+}
+.ds_log_form.first.adding,
+.ds_log_form.second.adding,
+.ds_log_form.tirs.adding,
+.ds_log_form.last.adding{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.nexting{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+}
+.nexting *{
+    width: 75px;
+    text-align: center;
+    color: #fff;
+    background-color: #2e2d2d;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    font-size: 1rem;
+}
+.nexting *:hover{
+    color: #0037ffda;
+    background-color: #ffffffd0;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+.ds_log_form.first .nexting{
+    justify-content: flex-end;
+}

@@ -1,0 +1,35 @@
+.itme-list-stat{
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 12px;
+    justify-content: center;
+
+}
+.it-profil{
+    border: 1px solid hsl(59, 100%, 58%);
+    border-radius: 11px;
+    box-shadow:  rgba(194, 255, 62, 0.632) -2px -2px 2px;
+    background-color: rgba(29, 29, 29, 0.743);
+}
+.profile-card1{
+    grid-row: span 2;
+    max-height: max-width;
+}
+.profile-card2, .profile-card3{
+    grid-column: span 2;
+}
+.profile-card4, .profile-card5{
+    grid-column: 1 / -1;
+}
+@media all and (max-width: 1000px){
+    .profile-card1{
+        border: none;
+        box-shadow: none;
+    }
+    .it-profil{
+        grid-column: 1 / -1;
+    }
+}

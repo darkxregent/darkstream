@@ -1,0 +1,90 @@
+.ds_content_search{
+    width: calc(100vw - 70px);
+    height: calc(100vh - 50px);
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    overflow: auto;
+}
+
+.ds_watch_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: calc(100% - 5px);
+    background-color: rgb(96, 59, 112);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman';
+    border-radius: 5px;
+    gap: 6px;
+}      
+
+
+/* CARD FOR DES VIDESOS */
+.ds_watch_search.other{
+    background-color: rgb(109, 92, 56);
+} 
+.herf_for_video{
+    width:  30%;
+    height: 100%;
+}
+@media all and (max-width:1000px){
+    .herf_for_video{
+        width:  45%;
+        height: 100%;
+    }
+}
+.other_card_content{
+    height: 200px;
+}
+.other_card_content{
+    width: calc(100% - 6px);
+}
+
+@media all and (max-width:760px){
+    .ds_content_search,.content_head{
+        min-width: 760px;
+    }
+}
+
+/* CARD FOR DES PROFIL ALL */
+.search_user_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 140px;
+    overflow: auto;
+    border: 3px solid #000000af;
+    border-left: none;
+    border-right: none;
+}
+.search_user{
+    width: auto;
+    height: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.search_user_prof{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #9d9d9d;
+    border-radius: 50%;
+}
+.or_no_query{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: calc(100% - 5px);
+    background-color: rgba(255, 80, 197, 0.574);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman';
+    border-radius: 5px;
+    gap: 6px;
+}

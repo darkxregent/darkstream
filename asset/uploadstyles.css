@@ -1,0 +1,357 @@
+.up_allcomtent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up_comtent{
+    position: relative;
+    width: 700px;
+    height: 470px;
+    background-color: black;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.file_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.ds_uploadfile{
+    /* border: 1px solid #fffbfb; */
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-shadow: rgba(255, 255, 255, 0.462) 2px 2px 2px 2px;
+    cursor: pointer;
+    width: 300px;
+}
+.ds_uploadfile:valid{
+    box-shadow: rgba(117, 255, 79, 0.462) 2px 2px 2px 2px;
+}
+.up_remove{
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    width: 80px;
+    height: 25px;
+    background-color: rgb(244, 14, 14);
+    border-color: #ff0000;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.up_secours{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    display: flex;
+    gap: 12px;
+}
+.up_change{
+    position: absolute;
+    bottom: 5px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+    padding-left: 2px;
+    height: 32px;
+}
+.up_change p{
+    color: #c5c1c1ea;
+    font-size: larger;
+}
+.pourcentage{
+    font-weight: bolder;
+
+}
+.progress_bar{
+    background: #ff0000;
+    width: 100%;
+    height: 10px;
+    border-radius: 16px;
+}
+.progression{
+    width: var(--wd ,0);
+    height: 100%;
+    background-color: chartreuse;
+    border-radius: 16px;
+}
+.up_etat{
+    position: absolute;
+    top: 16px;
+    width: 40%;
+    height: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+.etats{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+.uppaging{
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 25%;
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+.page:first-child{
+    width: 47%;
+    background-color: rgba(255, 0, 0, 0.887);
+    color: black;
+    border-color: rgb(255, 0, 0);
+    border-radius: 3px;
+}
+.page:first-child:active{
+    width: 47%;
+    background-color: rgba(172, 255, 47, 0.54);
+    color: black;
+    border-color: rgba(172, 255, 47, 0.591);
+    border-radius: 3px;
+}
+
+.page:last-child{
+    width: 47%;
+    background-color: rgb(0, 26, 219);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 26, 219);
+    border-radius: 3px;
+}
+.page:last-child:active{
+    background-color: rgba(1, 17, 135, 0.875);
+    border-color: rgba(1, 17, 135, 0.761);
+}
+.mysending{
+    width: 590px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+.mysending video{
+    width: 100%;
+    margin: auto;
+    border: 1px solid #fff;
+}
+.mytitle{
+    background-color: rgba(255, 242, 242, 0.469);
+    box-shadow: white 0px 3px 0px 0px;
+    font:   14px sans-serif;
+    height: 20px;
+    outline: none;
+    border: none;
+    padding-left: 12px;
+}
+.lb_mytitle{
+    background-color: rgb(0, 81, 255);
+    text-align: center;
+    font: 1rem sans-serif;
+}
+.detailform, .playlistform,.finPub{
+    width: 590px;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.detailform label{
+    padding-left: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.hd_title{
+    width: 100%;
+    text-decoration: underline;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px; 
+}
+.disc{
+    color: black;
+    font-size: large;
+    background-color: rgb(172, 168, 168);
+    height: 90px;
+    padding: 8px;
+    resize: none;
+}
+.isPlaylist,.noPlaylist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3px;
+}
+.isPlaylist select,.addPlaylist{
+    width: calc(100% - 13px);
+    height: 22px;
+    background-color: rgba(80, 80, 80, 0.818);
+    padding-left: 12px;
+    outline: none;
+    font: 1.123rem sans-serif;
+}
+.isPlaylist select{
+    width: calc(100% - 90px);
+}
+.pl_button{
+    width: 250px;
+    height: 26px;
+    text-align: center;
+    background-color: yellowgreen;
+    color: black;
+    border-color: #7cff70;
+    border-radius: 3px;
+}
+
+.playlistform select{
+    width: 100%;
+    height: 24px;
+    background-color: rgba(80, 80, 80, 0.818);
+    padding-left: 12px;
+    outline: none;
+    font: 1.123rem sans-serif;
+}
+.playlistform label{
+    padding-left: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.creat{
+    display: flex;
+    justify-content: space-between;
+}
+.creat .pl_lbl{
+    font-weight: normal;
+}
+.mycouvers{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.vid_couvers{
+    width: 100%;
+    height: 280px;
+    border: 1px solid #b6b6b6;
+    background: #424141;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+.canvas_couvers{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #271414;
+}
+.btn_couvers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.couvers{
+    display: none;
+}
+.btn_pracourir,.btn_genere{
+    width: 100%;
+    height: 22px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 6px;
+    color: black;
+    font-weight: bolder;
+}
+.btn_genere{
+    height: 26px;
+}
+.pub_submit{
+    width: 70%;
+    height: 26px;
+    background-color: rgb(142, 233, 5);
+    border-radius: 4px;
+    margin: auto;
+    color: #271414;
+    font-size: 18px;
+}
+.pub_submit:active{
+    position: relative;
+    top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form1, .form2,
+.form3, .form4,
+.form5, .form6,
+.form7{
+    display: none;
+}
+.form1.active, .form2.active,
+.form3.active, .form4.active,
+.form5.active, .form6.active{
+    display: flex;
+}#mycanvas{
+    display: none;
+}
+.up_change.chargement{
+    display: none;
+}
+
+
+
+/* Définir l'animation de rotation infinie */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.ratatElement{
+    animation: rotate 1s linear infinite;
+}
+.charging_svg{
+    justify-content: center;
+    display: none;
+
+}

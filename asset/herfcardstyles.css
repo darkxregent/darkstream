@@ -1,0 +1,67 @@
+.other_stream_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 9px;
+}
+
+.other_card_content{
+    height: 160px;
+    width: 100%;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    gap: 17px;
+    margin: 3px 0;
+}
+.herf_for_video{
+    width:  40%;
+    height: 100%;
+}
+.herf_for_video video{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px -1px 2px 1px rgba(255, 234, 0, 0.564); 
+}
+.herf_video_titre{
+    font-weight: 400;
+    max-height: 70px;
+    overflow: hidden;
+    color: rgb(148, 133, 133);
+}
+
+
+
+.herf_info_video{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 4px;
+}
+.herf_profil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+.herf_avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.herf_pseudo{
+    font-size: larger;
+    color: rgb(103, 79, 49);
+}
+
+
+.herf_other_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.herf_other_info span{
+    color: rgb(180, 204, 138);
+}

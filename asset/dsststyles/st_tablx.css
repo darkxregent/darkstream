@@ -1,0 +1,27 @@
+.items-listx-table{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    /* grid-template-rows: repeat(4, 2fr) ; */
+    gap: 12px;
+    margin: 5px;
+}
+.item{
+    border: 1px solid #b30000;
+    border-radius: 12px;
+    box-shadow:  rgba(251, 60, 60, 0.632) -2px -2px 2px;
+    background-color: rgba(246, 246, 246, 0.165);
+}
+.item1{
+    grid-column: span 2;
+}
+.item2{
+    grid-row: span 2;
+}
+.item3{
+    grid-column: span 2;
+}
+.item5{
+    grid-column: span 2;
+}
