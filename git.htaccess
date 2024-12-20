@@ -1,0 +1,33 @@
+RewriteEngine On
+
+RewriteRule ^index$  index.php
+
+RewriteRule ^stream$  dsplayerx.php
+
+RewriteRule ^stream?dsplayer=([0-9a-zA-Z]+)$  dsplayerx.php?dsplayer=$1
+
+# search 
+
+RewriteRule ^watch$  watch.php
+
+RewriteRule ^watch?search_q=([0-9a-zA-Z]+)$  watch.php?search_q=$1
+
+# RewriteRule ^wath$  index.php
+
+RewriteRule ^log$  login/ds_log.php
+
+RewriteRule ^logout$  login/logout.php
+
+RewriteRule ^log?login$  login/ds_log.php?login=$1
+
+RewriteRule ^log?login$  login/ds_log.php?logup=$1
+
+RewriteRule ^log?logrex$  login/ds_log.php?logrex=$1
+
+RewriteRule ^studios$  studio/user_gestion.php
+
+RewriteRule ^users$  user/statuts.php
+
+# RewriteRule ^index-([0-9a-zA-Z]+)cath$  index.php?cath=$1
+
+# RewriteRule ^wath-([0-9a-zA-Z]+)cath$  index.php?cath=$1
